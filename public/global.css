@@ -2,6 +2,10 @@
 
 body { background-color: #E8F4EB; }
 
+header { background-color: #7AB898; }
+
 h1, h2, h3, h4, h5, h6 { 
     font-family: 'manrope', sans-serif; 
-    font-weight: 700; color: #0B1D2D; }
+    font-weight: 700; color: #0B1D2D; } /* Títulos con fuente Manrope, peso 700 y color #0B1D2D */
+
+
