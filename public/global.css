@@ -4,7 +4,8 @@ body { background-color: #E8F4EB; }
 
 header { background-color: #7AB898;
         display: flex;
-        align-items: center; } /* Encabezado con fondo #7AB898 */
+        align-items: center;
+        border-radius: 10px; } /* Encabezado con fondo #7AB898 */
 
 .search-bar { 
     display: flex; 
@@ -17,3 +18,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'manrope', sans-serif; 
     font-weight: 700; color: #0B1D2D; } /* Títulos con fuente Manrope, peso 700 y color #0B1D2D */
 
+.chat-farmaceutico {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 32px 24px;
+    text-align: center;
+    flex-direction: column;
+}
