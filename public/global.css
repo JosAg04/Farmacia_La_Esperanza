@@ -27,3 +27,31 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     flex-direction: column;
 }
+
+/* INICIO ESTILO BARRA DE CATEGORIA */
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+nav li {
+    flex: 1;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    background-color: #7AB898;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 8px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+/* FIN ESTILO BARRA DE CATEGORIA */
