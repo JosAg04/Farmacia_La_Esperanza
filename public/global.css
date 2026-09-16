@@ -2,10 +2,131 @@
 
 body { background-color: #E8F4EB; }
 
-header { background-color: #7AB898; }
+/* INICIO ESTILO HEADER */
+header { background-color: #7AB898;
+        display: flex;
+        align-items: center;
+        border-radius: 10px; } /* Encabezado con fondo #7AB898 */
+
+.search-bar { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 20px 0; } /* Barra de búsqueda centrada con margen */
+ /* FIN ESTILO HEADER */
 
 h1, h2, h3, h4, h5, h6 { 
     font-family: 'manrope', sans-serif; 
     font-weight: 700; color: #0B1D2D; } /* Títulos con fuente Manrope, peso 700 y color #0B1D2D */
 
+.chat-farmaceutico {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 32px 24px;
+    text-align: center;
+    flex-direction: column;
+}
 
+/* INICIO ESTILO BARRA DE CATEGORIA */
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+nav li {
+    flex: 1;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    background-color: #7AB898;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 8px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+/* FIN ESTILO BARRA DE CATEGORIA */
+
+/* INICIO ESTILO ARTICULOS POPULASRES */
+
+.article1 {
+    background-color: white;
+    border-radius: 20px;
+    padding: 16px;
+    margin-bottom: 16px;
+    align-items: center;
+    gap: 16px;
+}
+
+.article1 h3 {
+    grid-column: 2;
+    color: #0B1D2D;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.article1 p {
+    grid-column: 2;
+    color: #56615A;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.article1 data {
+    color: #2C694E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.article2 {
+    background-color: white;
+    border-radius: 20px;
+    padding: 16px;
+    margin-bottom: 16px;
+    align-items: center;
+    gap: 16px;
+}
+
+.article2 h3 {
+    grid-column: 2;
+    color: #0B1D2D;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.article2 p {
+    grid-column: 2;
+    color: #56615A;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.article2 data {
+    color: #2C694E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* FIN ESTILO ARTICULOS POPULASRES */
