@@ -131,6 +131,7 @@ nav a {
 
 /* FIN ESTILO ARTICULOS POPULASRES */
 
+/* INICIO ESTILO FOOTER */
 footer {
     background-color: #E8F4EB;
     position: fixed;
@@ -141,3 +142,28 @@ footer {
     max-width: 100%;
     padding: 12px 16px 16px;
 }
+
+footer nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+footer nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    background-color: #7AB898;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 10px 4px;
+    border-radius: 14px;
+}
+
+footer nav a img {
+    width: 20px;
+    height: 20px;
+}
+/* FIN ESTILO FOOTER/NAV */
