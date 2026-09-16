@@ -2,6 +2,7 @@
 
 body { background-color: #E8F4EB; }
 
+/* INICIO ESTILO HEADER */
 header { background-color: #7AB898;
         display: flex;
         align-items: center;
@@ -12,7 +13,7 @@ header { background-color: #7AB898;
     align-items: center; 
     justify-content: center; 
     margin: 20px 0; } /* Barra de búsqueda centrada con margen */
-
+ /* FIN ESTILO HEADER */
 
 h1, h2, h3, h4, h5, h6 { 
     font-family: 'manrope', sans-serif; 
