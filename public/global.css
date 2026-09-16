@@ -99,10 +99,10 @@ article data {
 /* INICIO ESTILO FOOTER */
 footer {
     background-color: #E8F4EB;
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 49%;
-    transform: translateX(-50%);
+    transform: translateX(-51%);
     width: 100%;
     max-width: 100%;
     padding: 12px 16px 16px;
