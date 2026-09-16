@@ -59,7 +59,7 @@ nav a {
 
 /* INICIO ESTILO ARTICULOS POPULASRES */
 
-.article1 {
+article {
     background-color: white;
     border-radius: 20px;
     padding: 16px;
@@ -68,7 +68,7 @@ nav a {
     gap: 16px;
 }
 
-.article1 h3 {
+article h3 {
     grid-column: 2;
     color: #0B1D2D;
     font-size: 22px;
@@ -77,7 +77,7 @@ nav a {
     line-height: normal;
 }
 
-.article1 p {
+article p {
     grid-column: 2;
     color: #56615A;
     font-size: 18px;
@@ -86,7 +86,7 @@ nav a {
     line-height: normal;
 }
 
-.article1 data {
+article data {
     color: #2C694E;
     font-size: 18px;
     font-style: normal;
@@ -94,40 +94,6 @@ nav a {
     line-height: normal;
 }
 
-.article2 {
-    background-color: white;
-    border-radius: 20px;
-    padding: 16px;
-    margin-bottom: 16px;
-    align-items: center;
-    gap: 16px;
-}
-
-.article2 h3 {
-    grid-column: 2;
-    color: #0B1D2D;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.article2 p {
-    grid-column: 2;
-    color: #56615A;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.article2 data {
-    color: #2C694E;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
 
 /* FIN ESTILO ARTICULOS POPULASRES */
 
