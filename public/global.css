@@ -130,3 +130,14 @@ nav a {
 }
 
 /* FIN ESTILO ARTICULOS POPULASRES */
+
+footer {
+    background-color: #E8F4EB;
+    position: fixed;
+    bottom: 0;
+    left: 49%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 16px 16px;
+}
