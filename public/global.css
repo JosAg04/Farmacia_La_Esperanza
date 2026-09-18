@@ -111,6 +111,12 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 600;
     /* Estilo de fuente */
 
+    /* Estilo y bordes */
+    padding: 12px 36px;
+    border-radius: 50px;
+    border: none;
+    /* Estilo y bordes */
+    
 }
 
 /* Estilo de boton Iniciar Chat FIN*/
