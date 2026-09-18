@@ -98,6 +98,16 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Estilo chat con farmaceutico FIN */
 
+/* INICIO Estilo de boton Iniciar Chat */
+
+.btn-chat {
+    background-color: #124782; /* Color del boton y letra*/
+    color: white;
+}
+
+/* Estilo de boton Iniciar Chat FIN*/
+
+
 /* INICIO ESTILO BARRA DE CATEGORIA */
 nav {
     margin: 20px 0; /* distancia entre chat con famaceutico */
