@@ -103,6 +103,14 @@ h1, h2, h3, h4, h5, h6, p {
 .btn-chat {
     background-color: #124782; /* Color del boton y letra*/
     color: white;
+
+    /* Estilo de fuente */
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    /* Estilo de fuente */
+
 }
 
 /* Estilo de boton Iniciar Chat FIN*/
