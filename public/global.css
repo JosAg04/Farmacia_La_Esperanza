@@ -27,8 +27,8 @@ header img {
     flex-grow: 1; /* Estirar barra de busqueda para ocupar espacio sin uso del contenedor padre */
     margin: 0 auto; /* Para centrar en espacio sobrante a los lados */ 
     padding: 16px;
-    width: 50%;
-    max-width: 600px; } 
+    width: 80%;
+    max-width: 1000px; } 
 
 input[type="search"]{
     width: 100%;
