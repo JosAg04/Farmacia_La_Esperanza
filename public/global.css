@@ -1,23 +1,66 @@
 /* Estilos globales para la app*/
 
-body { background-color: #E8F4EB; }
-
 /* INICIO ESTILO HEADER */
-header { background-color: #7AB898;
-        display: flex;
-        align-items: center;
-        border-radius: 10px; } /* Encabezado con fondo #7AB898 */
+header { 
+    background-color: #7AB898;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 10px 8px;
+    position: fixed;   
+    top: 0;             
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 10px;}
+
+header img {
+    width: 33px;
+    height: 32px;
+    border-radius: 33px;
+}
 
 .search-bar { 
     display: flex; 
     align-items: center; 
-    justify-content: center; 
-    margin: 20px 0; } /* Barra de búsqueda centrada con margen */
+    gap: 10px;
+    flex-grow: 1; /* Estirar barra de busqueda para ocupar espacio sin uso del contenedor padre */
+    margin: 0 auto; /* Para centrar en espacio sobrante a los lados */ 
+    padding: 16px;
+    width: 80%;
+    max-width: 1000px; } 
+
+input[type="search"]{
+    width: 100%;
+    color: #6E7A73;
+    border: 1px solid; /* Grosor de la linea en barra de busqueda */
+    border-radius: 15px; /* Redondear bordes*/
+    padding: 10px 16px;
+
+/* POSICIONAMIENTO DE LA BARRA DE BUSQUEDA */
+    position: relative;
+    top: 2px;
+    left: -10px;}
+/* POSICIONAMIENTO DE LA BARRA DE BUSQUEDA */
+
  /* FIN ESTILO HEADER */
 
-h1, h2, h3, h4, h5, h6 { 
+ 
+
+ /* INICIO ESTILO BODY */
+
+ body { background-color: #E8F4EB;
+        padding-top: 80px; }
+
+/* INICIO Fuente en titulos y letras */
+
+h1, h2, h3, h4, h5, h6, p { 
     font-family: 'manrope', sans-serif; 
     font-weight: 700; color: #0B1D2D; } /* Títulos con fuente Manrope, peso 700 y color #0B1D2D */
+
+/* Fuente en titulos y letras FIN*/
+
+/* INICIO Estilo chat con farmaceutico */
 
 .chat-farmaceutico {
     background-color: white;
@@ -29,27 +72,79 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
 }
 
+.chat-farmaceutico p {
+    color: #56615A;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.chat-farmaceutico h1 {
+    color: #0B1D2D;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.chat-farmaceutico img {
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
+    background: #124782;
+}
+
+/* Estilo chat con farmaceutico FIN */
+
+/* INICIO Estilo de boton Iniciar Chat */
+
+.btn-chat {
+    background-color: #124782; /* Color del boton y letra*/
+    color: white;
+
+    /* Estilo de fuente */
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    /* Estilo de fuente */
+
+    /* Estilo y bordes */
+    padding: 12px 36px;
+    border-radius: 50px;
+    border: none;
+    /* Estilo y bordes */
+    
+}
+
+/* Estilo de boton Iniciar Chat FIN*/
+
+
 /* INICIO ESTILO BARRA DE CATEGORIA */
 nav {
-    margin: 20px 0;
+    margin: 20px 0; /* distancia entre chat con famaceutico */
 }
 
 nav ul {
     display: flex;
-    gap: 10px;
+    gap: 10px; /* Separacion entre opciones */
 }
 
 nav li {
     flex: 1;
-    list-style: none;
+    list-style: none; /* Eliminar puntos negros de listado */
 }
 
 nav a {
-    display: block;
+    display: block; /* Organizar en forma de bloque*/
     background-color: #7AB898;
     color: #ffffff;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
     text-align: center;
     padding: 10px 8px;
     border-radius: 20px;
@@ -99,10 +194,10 @@ article data {
 /* INICIO ESTILO FOOTER */
 footer {
     background-color: #E8F4EB;
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 49%;
-    transform: translateX(-50%);
+    transform: translateX(-51%); /* Mover el footer hacia la izquierda */
     width: 100%;
     max-width: 100%;
     padding: 12px 16px 16px;
@@ -118,7 +213,7 @@ footer nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
+    gap: 4px; /* Separacion entre opciones de navegaciones footer */
     background-color: #7AB898;
     color: #ffffff;
     font-size: 11px;
@@ -131,4 +226,4 @@ footer nav a img {
     width: 20px;
     height: 20px;
 }
-/* FIN ESTILO FOOTER/NAV */
+/* FIN ESTILO FOOTER/NAV */ 
