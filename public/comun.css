@@ -1,0 +1,16 @@
+/* Variables de uso comun */
+
+:root {
+    --color-header-footer: #7AB898; /* Se usa para el header y el footer */
+    --color-principal: #001C3B; /* Para titulos h2 */
+    --color-acentuacion-principal: #124782; /* Se usa para botones y otros */
+    --color-acentuacion-secundario: #2C694E; /* Botones y textos */
+    --color-acentuacion-terciario: #C5F6E0; /* estado de botones */
+    --color-bordes: #88938C; /* Se usan para bordes */
+    --color-text-alertas: #FF2020; /* color para texto de alerta */
+    --color-btn-alerta: #FFD5D5; /* color para botones de alertas */
+    --color-background: #FFD5D5; /* color del background, tarjetas */
+    --color-text-sec: #56615A; /* texto secundario */
+    --color-card-sec: #85B4F2; /* color para tarjetas secundarias */
+    
+}
