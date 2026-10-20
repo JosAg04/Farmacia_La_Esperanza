@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas | Farmacia La Esperanza</title>
+    <link rel="stylesheet" href="../../public/css/base.css">
+    <link rel="stylesheet" href="../../public/css/ofertas.css">
+</head>
+<body>
+
+    <!-- INICIO HEADER -->
+
+    <header>
+
+        <a href="index.html" aria-label="Farmacia La Esperanza, inicio">
+            <img src="" alt="Logo de Farmacia La Esperanza">
+        </a> 
+
+        <form action="/buscar" method="get" role="search" class="barra-busqueda">
+            <label for="buscar-producto">Buscar producto</label>
+            <input type="search" id="buscar-producto" name="q" placeholder="Buscar un producto">
+            <button type="submit">
+                <img src="" alt="Buscar">
+            </button>
+        </form>
+
+        <!-- INICIO NAVEGACION USUARIO -->
+
+        <nav aria-label="Acceso de usurio" class="accesos-header">
+
+            <ul>
+                <li>
+                    <a href="carrito.html">
+                        <img src="" alt="Carrito de compras">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pedidos.html">
+                        <img src="" alt="Mis pedidos">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recetas.html">
+                        <img src="" alt="Mis recetas y medicinas">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="perfil.html">
+                        <img src="" alt="Mi perfil">
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- FIN NAVEGACION USUARIO -->
+
+        <!-- INICIO NAVEGACION PRINCIPAL -->
+
+        <nav aria-label="Navegacion principal" class="navegacion-header">
+
+            <ul>
+
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+                <li><a href="ofertas.html" aria-current="page">Ofertas</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+
+        </nav>
+
+        <!-- FIN NAVEGACION PRINCIPAL -->
+
+    </header>
+
+    <!-- FIN HEADER -->
+
+    <!-- INICIO MAIN -->
+
+    <main>
+
+        <figure class="hero-ofertas">
+
+            <img src="" alt="OFERTAS DE LA SEMANA">
+
+        </figure>
+
+        <section aria-label="titulo-ofertas" class="productos-ofertas">
+
+            <!-- INICIO FILTRAR POR CATEGORIAS -->
+
+            <div class="filtrar-categoria" aria-label="filtro-categorias">
+                <h1>Ofertas</h1>
+
+                <form action="ofertas.html" method="get">
+
+                    <label for="filtro-categoria">Filtrar por categoria</label>
+
+                    <select id="filtro-categoria" name="categoria">
+                        <option value="">Todas las categorias</option>
+                        <option value="medicamentos">Medicamentos</option>
+                        <option value="cuidado-personal">Cuidado personal</option>
+                        <option value="cosmetica-belleza">Cosmetica y belleza</option>
+                        <option value="bebes-ninos">Bebes & ninos</option>
+                        <option value="bienestar">Bienestar</option>
+                        <option value="comestibles">Comestibles</option>
+                        <option value="salud-natural">Salud natural</option>
+                        <option value="vitaminas">Vitaminas</option>
+                    </select>
+                    <button type="submit">Filtrar</button>
+                </form>
+            </div>
+
+            <!-- FIN FILTRAR POR CATEGORIAS -->
+
+            <!-- INICIO PRODUCTOS EN OFERTA -->
+
+            <ul>
+
+                <li>
+                    <article class="oferta-producto">
+                        <span class="badge-oferta"><strong>Oferta -35%</strong></span>
+                        <img src="" alt="OLA GOTERO CRECIMIENTO ANTI-CAIDA 40 Onz">
+                        <h2><strong>OLA GOTERO</strong> CRECIMIENTO ANTI-CAIDA 40 Onz</h2>
+                        <p>
+                            <del class="precio-anterior">RD$95.00</del>
+                            <data value="63.65" class="precio-actual">RD$63.65</data>
+                        </p>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="ola-gotero-40onz">
+                            <button type="submit">Agregar al carrito</button>
+                        </form>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="oferta-producto">
+                        <span class="badge-oferta"><strong>Oferta -33%</strong></span>
+                        <img src="" alt="URIAGE GYNPHY GEL">
+                        <h2><strong>URIAGE</strong> GYNPHY GEL</h2>
+                        <p>
+                            <del class="precio-anterior">RD$350.00</del>
+                            <data value="234.50" class="precio-actual">RD$234.50</data>
+                        </p>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="uriage-gel">
+                            <button type="submit">Agregar al carrito</button>
+                        </form>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="oferta-producto">
+                        <span class="badge-oferta"><strong>Oferta -33%</strong></span>
+                        <img src="" alt="DEPORTE DESODORANTE EN CREMA 2 Onz">
+                        <h2><strong>DEPORTE</strong> DESODORANTE CREMA 2 Onz</h2>
+                        <p>
+                            <del class="precio-anterior">RD$50.00</del>
+                            <data value="33.50" class="precio-actual">RD$33.50</data>
+                        </p>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="deporte-desodorante-2onz">
+                            <button type="submit">Agregar al carrito</button>
+                        </form>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="oferta-producto">
+                        <span class="badge-oferta"><strong>Oferta -33%</strong></span>
+                        <img src="" alt="DRYSOL 35ml">
+                        <h2><strong>DRYSOL</strong> 35ml</h2>
+                        <p>
+                            <del class="precio-anterior">RD$340.00</del>
+                            <data value="227.08" class="precio-actual">RD$227.08</data>
+                        </p>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="drysol-35ml">
+                            <button type="submit">Agregar al carrito</button>
+                        </form>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="oferta-producto">
+                        <span class="badge-oferta"><strong>Oferta -33%</strong></span>
+                        <img src="" alt="BLUE GROSS PERITA NASAL SYRINGE">
+                        <h2><strong>BLUE GROSS</strong> PERITA NASAL SYRINGE</h2>
+                        <p>
+                            <del class="precio-anterior">RD$34.00</del>
+                            <data value="22.78" class="precio-actual">RD$22.78</data>
+                        </p>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="blue-perita-nasal">
+                            <button type="submit">Agregar al carrito</button>
+                        </form>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="oferta-producto">
+                        <span class="badge-oferta"><strong>Oferta -33%</strong></span>
+                        <img src="" alt="J&J VASELINA 100gr">
+                        <h2><strong>J&J</strong> VASELINA 100gr</h2>
+                        <p>
+                            <del class="precio-anterior">RD$230.00</del>
+                            <data value="154.10" class="precio-actual">RD$154.10</data>
+                        </p>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="j&j-vaselina-100gr">
+                            <button type="submit">Agregar al carrito</button>
+                        </form>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="oferta-producto">
+                        <span class="badge-oferta"><strong>Oferta -33%</strong></span>
+                        <img src="" alt="NAN SIN LACTOSA">
+                        <h2><strong>NAN</strong> SIN LACTOSA</h2>
+                        <p>
+                            <del class="precio-anterior">RD$1339.00</del>
+                            <data value="897.13" class="precio-actual">RD$897.13</data>
+                        </p>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="nan-sin-lactosa">
+                            <button type="submit">Agregar al carrito</button>
+                        </form>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="oferta-producto">
+                        <span class="badge-oferta"><strong>Oferta -33%</strong></span>
+                        <img src="" alt="JARABE SANCOCHITO 120Ml Dr. Collado">
+                        <h2><strong>JARABE SANCOCHITO</strong> 120ml Dr. Collado</h2>
+                        <p>
+                            <del class="precio-anterior">RD$99.00</del>
+                            <data value="66.33" class="precio-actual">RD$63.33</data>
+                        </p>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="jarabe-sancochito-120ml">
+                            <button type="submit">Agregar al carrito</button>
+                        </form>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="oferta-producto">
+                        <span class="badge-oferta"><strong>Oferta -33%</strong></span>
+                        <img src="" alt="DORITOS 300gr ">
+                        <h2><strong>DORITOS</strong> 300gr</h2>
+                        <p>
+                            <del class="precio-anterior">RD$150.00</del>
+                            <data value="100.50" class="precio-actual">RD$100.50</data>
+                        </p>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="doritos-300gr">
+                            <button type="submit">Agregar al carrito</button>
+                        </form>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="oferta-producto">
+                        <span class="badge-oferta"><strong>Oferta -33%</strong></span>
+                        <img src="" alt="GATORADE-NARANJA 32onz">
+                        <h2><strong>GATORADE NARANJA</strong> 32 Onz</h2>
+                        <p>
+                            <del class="precio-anterior">RD$65.00</del>
+                            <data value="43.55" class="precio-actual">RD$43.55</data>
+                        </p>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="gatorade-naranja-32onz">
+                            <button type="submit">Agregar al carrito</button>
+                        </form>
+                    </article>
+                </li>
+
+            </ul>
+
+            <!-- FIN PRODUCTOS EN OFERTA -->
+
+        </section>
+
+
+    </main>
+
+    <!-- FIN MAIN -->
+
+    <!-- INICIO FOOTER -->
+
+    <footer id="pie">
+
+        <section aria-label="Farmacia La Esperanza">
+
+            <a href="index.html">
+                <img src="" alt="Logo de Farmacia La Esperanza">
+            </a>
+            <strong class="titulo-marca">Farmacia La Esperanza</strong>
+
+        </section>
+
+        </section>
+
+        <!-- INICIO NAVEGACION PIE DE PAGINA -->
+
+        <nav class="pie-navegacion">
+            <h2 id="titulo-pie-navegacion">Navegacion</h2>
+
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- FIN NAVEGACION PIE DE PAGINA -->
+
+        <section class="pie-contacto">
+
+            <h2 id="titulo-pie-navegacion">Contacto</h2>
+            <address>
+                <p><strong>Telefono:</strong> <a href="+18291235467"></a>829-123-5467</p>
+                <p><strong>Email:</strong> <a href="mailto:farmaciaesperanza@gmail.com">farmaciaesperanza@gmail.com</a></p>
+            </address>
+
+        </section>
+
+        <section class="pie-redes">
+
+            <h2 id="titulo-pie-pagina">Redes Sociales</h2>
+
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <img src="" alt="facebook">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/">
+                        <img src="" alt="instagram">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://twitter.com/">
+                        <img src="" alt="twitter">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <small>&copy; Copyright 2026 Farmacia La Esperanza. Todos los derechos reservados. República Dominicana</small>
+
+    </footer>
+
+    <!-- FIN FOOTER -->
+    
+</body>
+</html>
