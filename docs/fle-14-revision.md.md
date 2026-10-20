@@ -52,3 +52,12 @@
 | ENTREGADA/CANCELADA escritos como  ENTREGADO/CANCELADO en otro frame | 523-486              | 523-1167               |
 | Estado de pedido "CONFIRMADO" dentro de la tabla de productos        | 523-382             | 523-382                |
 | ACEPTAR y RECHAZAR sin estados resultantes                           | 523-488              | 523-492                |
+
+
+-Propuestas:
+
+1-Disenar la pantalla de receta para mantener la coherencia y relacion entre pantallas.
+
+2-Disenar los estados y formularios faltantes de las pantallas para conectar los botones con sus respectivas pantallas y mantener el flujo.
+
+3-Terminar de disenar todas las pantallas, revisar el flujo y disenar la version movil del apartado de administracion.
