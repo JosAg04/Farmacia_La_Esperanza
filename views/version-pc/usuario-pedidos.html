@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Farmacia La Esperanza</title>
+    <title>Tus Pedidos | Farmacia La Esperanza</title>
 </head>
 <body>
 
@@ -35,7 +35,7 @@
                 </li>
 
                 <li>
-                    <a href="pedidos.html">
+                    <a href="pedidos.html"  aria-current="page">
                         <img src="" alt="Mis pedidos">
                     </a>
                 </li>
@@ -67,7 +67,7 @@
                 <li><a href="categorias.html">Categorias</a></li>
                 <li><a href="ofertas.html">Ofertas</a></li>
                 <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
 
             </ul>
 
@@ -77,83 +77,141 @@
 
     </header>
 
-    <!-- INICIO HEADER -->
+    <!-- FIN HEADER -->
 
     <!-- INICIO MAIN -->
 
     <main>
 
-        <section class="banner-contacto">
+        <!-- INICIO ASIDE MENU DE PERFIL -->
 
-            <h1 id="titulo-contacto">Contacto</h1>
-            <p>¿Alguna duda? Comunícate con nosotros.</p>
+        <aside class="perfil-menu">
+
+            <div class="usuario-resumen">
+
+                <img src="" alt="Foto de perfil" class="usuario-avatar">
+                <p class="usuario-nombre">Nombre de Usuario</p>
+
+            </div>
+
+            <nav class="perfil-navegacion">
+
+                <ul class="pefil-lista">
+
+                    <li>
+
+                        <a href="usuario-perfil.html" class="perfil-link">
+                            <img src="" alt="" class="perfil-icono">
+                            Perfil
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#" class="perfil-link">
+                            <img src="" alt="" class="perfil-icono">
+                            Tus pedidos
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#" class="perfil-link">
+                            <img src="" alt="" class="perfil-icono">
+                            Tus Recetas
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#" class="perfil-link">
+                            <img src="" alt="" class="perfil-icono">
+                            Preferencias y Alertas
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#" class="perfil-link">
+                            <img src="" alt="" class="perfil-icono">
+                            Condiciones y Alergias
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#" class="perfil-link">
+                            <img src="" alt="" class="perfil-icono">
+                            Direcciones de Envio
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#" class="perfil-link">
+                            <img src="" alt="" class="perfil-icono">
+                            Metodos de Pago
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <button type="button" class="cerrar-sesion">
+                <img src="" alt="" class="icono-cerrar-sesion">
+                Cerrar Sesion
+            </button>
+
+        </aside>
+
+        <!-- FIN ASIDE MENU DE PERFIL -->
+
+        <!-- INICIO SECTION HISTORIAL DE PEDIDOS-->
+
+        <section class="historial-pedidos">
+
+            <h1 class="historial-titulo">Historial de Pedidos</h1>
+
+            <div class="historial-vacio">
+
+                <p class="pedido-vacio">¡Aun no has realizado tu primer pedido!</p>
+                <a href="#" class="realizar-pedido" id="realizar-pedido">Realizar un Pedido</a>
+
+            </div>
 
         </section>
 
-        <section class="ubicacion">
-
-            <h2 id="titutlo-ubicacion">Ubicacion del local</h2>
-
-            <article>
-                <h3>Direccion fisica</h3>
-                <address>Farmacia La Esperanza<br>Av. Don Caseres #15<br>Santiago, R.D.</address>
-            </article>
-        </section>
-
-        <section class="formas-contacto">
-
-            <h2 id="titulo-formas-contacto">Formas de contactarnos</h2>
-
-            <ul>
-
-                <li>
-                    <article>
-                        <h3>Whatsapp</h3>
-                        <p>Para un contacto mas cercano</p>
-                        <p><a href="https://wa.me/18291234567">829-123-4567</a></p>
-                    </article>
-                </li>
-
-                <li>
-                    <article>
-                        <h3>Numero telefonico</h3>
-                        <p>Linea directa para llamadas</p>
-                        <p><a href="tel:+18291234567">829-123-4567</a></p>
-                    </article>
-                </li>
-
-                <li>
-                    <article>
-                        <h3>Correo Electronico</h3>
-                        <p>Envianos un correo</p>
-                        <p><a href="mailto:Farmacialaesperanza@gmail.com">Farmacialaesperanza@gmail.com</a></p>
-                    </article>
-                </li>
-
-            </ul>
-
-        </section>
+        <!-- FIN SECTION HISTORIAL DE PEDIDOS-->
 
     </main>
 
-    <!-- INICIO MAIN -->
+    <!-- FIN MAIN -->
 
-    <!-- INICIO FOOTER -->
-    
-    <footer>
+    <!-- INICIO FOOTER-->
+
+    <footer id="pie"> 
 
         <section aria-label="Farmacia La Esperanza">
 
             <a href="index.html">
                 <img src="" alt="Logo de Farmacia La Esperanza">
             </a>
-            <p>Farmacia La Esperanza</p>
+            <strong class="titulo-marca">Farmacia La Esperanza</strong>
 
         </section>
 
         <!-- INICIO NAVEGACION PIE DE PAGINA -->
 
         <nav class="pie-navegacion">
+            
             <h2 id="titulo-pie-navegacion">Navegacion</h2>
 
             <ul>
@@ -204,11 +262,9 @@
 
         </section>
 
-        <small>Copyright 2026 Farmacia La Esperanza. Todos los derechos reservados. República Dominicana</small>
+        <small> &copy; Copyright 2026 Farmacia La Esperanza. Todos los derechos reservados. República Dominicana</small>
 
     </footer>
-
-    <!-- FIN FOOTER -->
 
 </body>
 </html>
