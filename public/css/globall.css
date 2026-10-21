@@ -142,4 +142,37 @@ img {
     border-radius: var(--radio-comun);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
  }
+ 
+/*============================= 
+            BTNS
+ =============================== */
 
+ .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    min-height: 44px;
+    padding: 8px 24px;
+    font-family: var(--fuente-texto);
+    font-size: 20px;
+    font-weight: var(--texto-bold);
+    line-height: 1;
+    color: white;
+    background-color: var(--color-secundario);
+    border: none;
+    border-radius: var(--radio-2);
+    cursor: pointer;
+    text-decoration: none;
+
+ }
+
+ .btn:hover {
+    text-decoration: none;
+    background-color: var(--color-titulo);
+ }
+
+ .btn:focus-visible {
+    outline: 3px solid var(--color-iconos   );
+    outline-offset: 2px;
+ }
