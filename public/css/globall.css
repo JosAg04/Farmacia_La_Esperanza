@@ -202,3 +202,29 @@ img {
     background-color: var(--color-fondo-positivo);
 }
 
+/*============================= 
+            FORMS
+=============================== */
+
+.form {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    padding: 4px 8px;
+    font-family: var(--fuente-texto);
+    font-size: 16px;
+    color: var(--color-texto);
+    background-color: white;
+    border: var(--borde-base);
+    border-radius: var(--radio-comun);
+}
+
+.form::placeholder {
+    color: var(--color-placeholder);
+}
+
+.form:focus-visible {
+    outline: 3px solid var(--color-iconos);
+    outline-offset: 1px;
+    border-color: var(--color-secundario);
+}
