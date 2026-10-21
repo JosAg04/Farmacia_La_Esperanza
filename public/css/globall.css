@@ -1,0 +1,56 @@
+/*=============================
+     Hoja de estilo global 
+===============================*/
+
+/*==============================================================
+        RESET QUITAR MARGENES Y RELLENOS POR DEFECTO 
+ ===============================================================*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*=======================
+        VARIABLES 
+ =======================*/
+
+ :root {
+    --color-fondo: white; /* Color para el fondo de la pagina */
+    --color-primario: #2c694e; /* Color principal de la pagina */
+    --color-secundario: #124782; /* Color secundario de la pagina para botones */
+    --color-neutro: #1a2b3c; /* Neutral 1 */
+    --color-neutro-2: #e9f5ec; /* Neutral 2 */
+
+    --color-header-footer: #7ab898; /* color para el encabezado/pie */
+    --color-fondo: #e8f4eb; /* fondo de secciones y tarjetas */
+    --color-titulo: #001c3b; /* Titulos h2 */
+    --color-titulo-secundario: #5297e5; /* Titulos h3 secundario */
+    --color-texto: black; /* texto general en la pagina */
+    --color-resaltado: #2c694e; /* precios y textos resaltados */
+    --color-placeholder: #56615A; /* color barras de busquedas/inputs */
+    --color-bordes: #88938C; /* color para bordes */
+    --color-texto-suave: #56615A; /* color para subtextos */
+    --color-iconos: #85b4f2; /* color para iconos principales */
+
+    --color-texto-alerta: #FF2020; /* texto de alerta/carrito */
+    --color-texto-fuerte-alerta: #BD2525; /* texto fuerte para alertas */
+    --color-fondo-alerta: #FFD5D5; /* fondo para botones/tarjetas alertas */
+    --color-texto-positivo: #2D6A4F; /* color de texto positivo/estados */
+    --color-fondo-positivo: #C5F6E0; /* fondo de estado positvo, botones y tarjetas */
+    --color-fondo-tarjeta: #E8F4EB; /* color fondo de tarjeta controlada */
+
+    --fuente-texto: "Manrope", 'Arial', sans-serif;
+    --texto-light: 300;
+    --texto-regular: 400;
+    --texto-medium: 500;
+    --texto-semibold: 600;
+    --texto-bold: 700;
+    --texto-extrabold: 800; /* Todos los pesos usados en la pagina, a lo mejor si tenias que hacerlas */
+
+    --radio-comun: 20px; /* tarjetas, botones, inputs */
+    --radio-2: 30px; /* barras de busquedas, formularios */
+    --radio-pildora: 999px; /* badge de ofertas o botones tipo pildora */
+    --borde-base: 1px solid var(var(--color-placeholder));
+ }
