@@ -1,0 +1,9 @@
+/* Hoja de estilo global */
+
+/* RESET QUITAR MARGENES Y RELLENOS POR DEFECTO */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
