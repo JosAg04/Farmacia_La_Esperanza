@@ -176,3 +176,29 @@ img {
     outline: 3px solid var(--color-iconos   );
     outline-offset: 2px;
  }
+
+/*============================= 
+            BADGE
+=============================== */
+
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 13px;
+    font-weight: var(--texto-bold);
+    line-height: 1.4;
+    color: var(--color-texto);
+    background-color: var(--color-fondo-positivo);
+    border-radius: var(--radio-comun);
+}
+
+.badge-alerta {
+    color: var(--color-texto-alerta);
+    background-color: var(--color-fondo-alerta);
+}
+
+.badge-oferta {
+    color: white;
+    background-color: var(--color-fondo-positivo);
+}
+
