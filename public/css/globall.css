@@ -251,8 +251,25 @@ img {
         padding-inline: 32px;
     }
 
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+}
+
+
     .card {
         padding: 24px;
         margin: 20px;
     }
+}
+
+@media (min-width: 1440px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 44px;
+}
+
+
 }
