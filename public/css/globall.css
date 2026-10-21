@@ -2,16 +2,6 @@
      Hoja de estilo global 
 ===============================*/
 
-/*==============================================================
-        RESET QUITAR MARGENES Y RELLENOS POR DEFECTO 
- ===============================================================*/
-
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 /*=======================
         VARIABLES 
  =======================*/
@@ -24,7 +14,7 @@
     --color-neutro-2: #e9f5ec; /* Neutral 2 */
 
     --color-header-footer: #7ab898; /* color para el encabezado/pie */
-    --color-fondo: #e8f4eb; /* fondo de secciones y tarjetas */
+    --color-fondo-card: #e8f4eb; /* fondo de secciones y tarjetas */
     --color-titulo: #001c3b; /* Titulos h2 */
     --color-titulo-secundario: #5297e5; /* Titulos h3 secundario */
     --color-texto: black; /* texto general en la pagina */
@@ -53,4 +43,35 @@
     --radio-2: 30px; /* barras de busquedas, formularios */
     --radio-pildora: 999px; /* badge de ofertas o botones tipo pildora */
     --borde-base: 1px solid var(var(--color-placeholder));
+ }
+
+ /*==============================================================
+        RESET QUITAR MARGENES Y RELLENOS POR DEFECTO 
+ ===============================================================*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+ul, ol, a {
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+ /*============================= 
+        ESTILO GLOBAL BODY
+ =============================== */
+
+ body {
+    font-family: var(--fuente-texto);
+    font-size: 1.5rem;
+    font-weight: var(--texto-regular);
+    line-height: 1.5;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
  }
