@@ -206,7 +206,7 @@ img {
             FORMS
 =============================== */
 
-.form {
+.form-control {
     display: block;
     width: 100%;
     min-height: 44px;
@@ -219,11 +219,11 @@ img {
     border-radius: var(--radio-comun);
 }
 
-.form::placeholder {
+.form-control::placeholder {
     color: var(--color-placeholder);
 }
 
-.form:focus-visible {
+.form-control:focus {
     outline: 3px solid var(--color-iconos);
     outline-offset: 1px;
     border-color: var(--color-secundario);
