@@ -75,3 +75,16 @@ ul, ol, a {
     color: var(--color-texto);
     background-color: var(--color-fondo);
  }
+
+ /*============================= 
+            HEADINGS
+ =============================== */
+
+ h1, h2, h3, h4 {
+    font-family: var(--fuente-texto);
+    font-weight: var(--texto-bold);
+    line-height: 1.2;
+    color: var(--color-titulo);
+ }
+
+ 
