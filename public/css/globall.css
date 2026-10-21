@@ -87,4 +87,25 @@ ul, ol, a {
     color: var(--color-titulo);
  }
 
- 
+  /*============================= 
+            LINKS
+ =============================== */
+
+ a {
+    color: var(--color-primario);
+    text-decoration: none;
+ }
+
+ a:hover {
+    text-decoration: underline;
+ }
+
+ a:focus-visible {
+    outline: 3px solid var(--color-iconos);
+    outline-offset: 2px;
+ }
+
+a[aria-current="page"] {
+    color: var(--color-iconos);
+}
+
