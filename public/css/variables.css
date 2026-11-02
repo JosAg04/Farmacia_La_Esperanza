@@ -42,5 +42,6 @@
     --radio-comun: 20px; /* tarjetas, botones, inputs */
     --radio-2: 30px; /* barras de busquedas, formularios */
     --radio-pildora: 999px; /* badge de ofertas o botones tipo pildora */
-    --borde-base: 1px solid var(var(--color-placeholder));
+    --borde-base: 1px solid var(--color-placeholder);
+    --pad-pagina: clamp(1rem, 5vw, 3rem);
  }
