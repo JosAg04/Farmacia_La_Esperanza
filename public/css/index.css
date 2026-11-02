@@ -163,8 +163,9 @@
 .promocion img {
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    max-width: none;
+    object-fit: contain;
 }
 
 /*=============================
@@ -174,15 +175,19 @@
 @media (min-width: 768px) {
     .promocion {
         flex-direction: row;
-        align-items: stretch;
-    }
- 
-    .promocion .banner {
-        flex: 44 1 0;               
-    }
- 
-    .promocion .app {
-        flex: 56 1 0;                
+        align-items: center;
     }
 
+    .promocion .banner {
+        flex: 1 1 auto;
+        position: relative;
+        z-index: 0;              
+    }
+
+    .promocion .app {
+        position: relative;           
+        z-index: 1;
+        flex: 0 0 55%;
+        margin-left: -12%;            
+    }
 }
