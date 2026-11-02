@@ -142,3 +142,47 @@
         font-size: 0.75rem;
     }
 }
+
+/*============================= 
+        PROMOCION
+===============================*/
+
+.promocion {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem var(--pad-pagina) 2rem;
+    overflow: hidden;
+    border-radius: 0.8rem;
+}
+
+.promocion figure {
+    margin: 0;
+    min-width: 0;
+}
+
+.promocion img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*=============================
+        MEDIA QUERIES
+=============================== */
+
+@media (min-width: 768px) {
+    .promocion {
+        flex-direction: row;
+        align-items: stretch;
+    }
+ 
+    .promocion .banner {
+        flex: 44 1 0;               
+    }
+ 
+    .promocion .app {
+        flex: 56 1 0;                
+    }
+
+}
