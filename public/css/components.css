@@ -132,13 +132,15 @@
             HEADER
 =============================== */
 
+
 header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 0.75rem 1rem;
-    padding: 0.75rem 0;
-    background: var(--color-header-footer);
+    padding: 0.75rem var(--pad-pagina) 0;
+    background: var(--color-fondo);
+    
 }
 
 /* Logo */
@@ -175,7 +177,7 @@ header > a img {
 .accesos-header a {
     display: inline-flex;
     padding: 0.25rem;
-    color: var(--color-tiulo-secundario);
+    color: var(--color-titulo-secundario);
 }
 
 .accesos-header img {
@@ -183,6 +185,19 @@ header > a img {
     height: 1.6rem;
     object-fit: contain;
 }
+
+/* etiqeta invisble */
+
+.barra-busqueda label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+/* etiqeta invisble */
 
 /* buscador */
 
@@ -196,8 +211,6 @@ header > a img {
     border-radius: var(--radio-pildora);
     padding: 0.25rem 0.5rem 0.25rem 1rem;
     background: var(--color-fondo);
-    min-width: 200px;
-    max-width: 400px;
 }
 
 .barra-busqueda input[type="search"] {
@@ -211,7 +224,7 @@ header > a img {
     padding: 0.4rem 0;
 }
 
-.barrra-busqueda:focus-within {
+.barra-busqueda:focus-within {
     outline: 2px solid var(--color-tiulo-secundario);
     outline-offset: 2px;
 }
@@ -237,9 +250,9 @@ header > a img {
 .navegacion-header {
     order: 4;
     flex: 1 1 100%;
-    border-bottom: 1px solid var(--borde-base);
     overflow-x: auto;
     scrollbar-width: none;
+    border-bottom: var(--borde-base);
 }
 
 .navegacion-header::-webkit-scrollbar {
@@ -269,7 +282,7 @@ header > a img {
     border-bottom: 2px solid transparent;
 }
 
-.navegacion-header a:hover, .navegacion-header:focus-visible {
+.navegacion-header a:hover, .navegacion-header a:focus-visible {
     border-bottom-color: var(--color-titulo-secundario);
 }
 
@@ -284,6 +297,7 @@ header > a img {
 @media (min-width: 768px) {
     header {
         gap: 0.75rem 2rem;
+        padding: 0.75rem var(--pad-pagina) 0;
         padding-top: 1rem;
     }
  
@@ -317,6 +331,205 @@ header > a img {
  
     .navegacion-header a {
         font-size: 0.95rem;
+    }
+}
+
+/*============================= 
+            FOOTER
+=============================== */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem clamp(1rem, 5vw, 3rem);
+    background: var(--color-header-footer);
+    color: var(--color-fondo);
+    text-align: center;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer a:hover, footer a:focus-visible {
+    text-decoration: underline;
+}
+
+footer h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.4rem;
+    font-weight: var(--texto-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+    color: var(--color-fondo);
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* logo */
+
+.logo-pie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo-pie img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.titulo-marca {
+    max-width: 10ch;
+    color: var(--color-resaltado);
+    font-size: 1.15rem;
+    font-weight: var(--texto-bold);
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+/* navagcion pie */
+
+.pie-navegacion ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.pie-navegacion a {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+/* contacto */
+
+.pie-contacto address {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    font-style: normal;
+    font-size: 0.8rem;
+}
+
+.pie-contacto p {
+    margin: 0;
+}
+
+.pie-contacto strong {
+    text-transform: uppercase;
+}
+
+/* redes */
+
+.pie-redes ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.pie-redes a {
+    display: inline-flex;
+}
+
+.pie-redes img {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+}
+
+/* copyright */
+
+footer > small {
+    align-self: stretch;
+    margin-inline: calc(var(--pad-pagina) * -1);
+    padding: 1.25rem clamp(1rem, 5vw, 3rem);
+    background: var(--color-header-footer);
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+/*==================================================== 
+            MEDIA QUERIES (tablet / escritorio)
+====================================================== */
+
+/* ---------- Footer en tablet: 2 columnas ---------- */
+@media (min-width: 600px) {
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 2rem 1.5rem;
+        text-align: left;
+    }
+ 
+    footer > :not(small) {
+        flex: 1 1 calc(50% - 0.75rem);
+        min-width: 0;
+    }
+ 
+    footer > small {
+        flex: 0 0 calc(100% + clamp(1rem, 5vw, 3rem) * 2);
+        text-align: center;
+    }
+ 
+    .logo-pie {
+        align-items: flex-start;
+    }
+ 
+    .pie-redes ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+ 
+/* ---------- Footer en escritorio: 4 columnas ---------- */
+@media (min-width: 992px) {
+    footer {
+        padding-top: 2.5rem;
+        gap: 2.5rem 2rem;
+    }
+ 
+    footer > :not(small) {
+        flex: 1 1 0;
+    }
+ 
+    .logo-pie {
+        align-items: center;
+    }
+ 
+    .pie-navegacion {
+        flex-grow: 1.3;
+    }
+ 
+    .pie-contacto {
+        flex-grow: 1.6;
+    }
+ 
+    .pie-redes {
+        flex-grow: 0.8;
+    }
+ 
+    .pie-redes h2 {
+        text-align: right;
+    }
+ 
+    .pie-redes ul {
+        align-items: flex-end;
+        gap: 1.5rem;
+    }
+ 
+    footer > small {
+        font-size: 0.9rem;
     }
 }
 
