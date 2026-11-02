@@ -127,7 +127,9 @@
     outline-offset: 1px;
     border-color: var(--color-secundario);
 }
-
+main h1 {
+    display: none;
+}
 /*============================= 
             HEADER
 =============================== */
