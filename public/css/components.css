@@ -2,6 +2,9 @@
     Hoja de estilo containers
 ===============================*/
 
+@import url("variables.css");
+@import url("reset.css");
+
 /*============================= 
             CONTAINERS
  =============================== */
@@ -124,6 +127,199 @@
     outline-offset: 1px;
     border-color: var(--color-secundario);
 }
+
+/*============================= 
+            HEADER
+=============================== */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1rem;
+    padding: 0.75rem 0;
+    background: var(--color-header-footer);
+}
+
+/* Logo */
+
+header > a {
+    order: 1;
+    display: inline-flex;
+    flex: 0 0 auto;
+}
+
+header > a img {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* Accesos del usuario */
+
+.accesos-header {
+    order: 2;
+    margin-left: auto;
+}
+
+.accesos-header ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.accesos-header a {
+    display: inline-flex;
+    padding: 0.25rem;
+    color: var(--color-tiulo-secundario);
+}
+
+.accesos-header img {
+    width: 1.6rem;
+    height: 1.6rem;
+    object-fit: contain;
+}
+
+/* buscador */
+
+.barra-busqueda {
+    order: 3;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    border: var(--borde-base);
+    border-radius: var(--radio-pildora);
+    padding: 0.25rem 0.5rem 0.25rem 1rem;
+    background: var(--color-fondo);
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.barra-busqueda input[type="search"] {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font: inherit;
+    font-size: 1rem;
+    padding: 0.4rem 0;
+}
+
+.barrra-busqueda:focus-within {
+    outline: 2px solid var(--color-tiulo-secundario);
+    outline-offset: 2px;
+}
+
+.barra-busqueda .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background: transparent;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+.barra-busqueda .icn-lupa {
+    width: 1.4rem;
+    height: 1.4rem;
+    
+}
+
+/* navegacion principal */
+
+.navegacion-header {
+    order: 4;
+    flex: 1 1 100%;
+    border-bottom: 1px solid var(--borde-base);
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.navegacion-header::-webkit-scrollbar {
+    display: none;
+}
+
+.navegacion-header ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 0 0.5rem;
+    width: max-content;
+    min-width: 100%;
+}
+
+.navegacion-header a {
+    display: inline-block;
+    padding: 0.25rem 0.25rem 0.5rem;
+    color: var(--color-primario);
+    font-size: 0.85rem;
+    font-weight: var(--texto-bold);
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+}
+
+.navegacion-header a:hover, .navegacion-header:focus-visible {
+    border-bottom-color: var(--color-titulo-secundario);
+}
+
+.navegacion-header a[aria-current="page"] {
+    color: var(--color-titulo-secundario);
+}
+
+/*==================================================== 
+            MEDIA QUERIES (tablet / escritorio)
+====================================================== */
+
+@media (min-width: 768px) {
+    header {
+        gap: 0.75rem 2rem;
+        padding-top: 1rem;
+    }
+ 
+    header > a img {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+ 
+    .barra-busqueda {
+        order: 2;
+        flex: 1 1 0;
+    }
+ 
+    .accesos-header {
+        order: 3;
+        margin-left: 0;
+    }
+ 
+    .accesos-header ul {
+        gap: 1.5rem;
+    }
+ 
+    .accesos-header img {
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+ 
+    .navegacion-header ul {
+        gap: clamp(1.5rem, 4vw, 3.5rem);
+    }
+ 
+    .navegacion-header a {
+        font-size: 0.95rem;
+    }
+}
+
 
 /*============================= 
             MEDIA QUERIES
