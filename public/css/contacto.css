@@ -1,0 +1,57 @@
+/* Hoja de estilo para contacto.html */
+
+@import url("reset.css");
+@import url("components.css");
+@import url("variables.css");
+
+/*============================= 
+    HERO / CONTACTO
+===============================*/
+
+.banner-contacto {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    min-height: clamp(7rem, 17vw, 20rem);
+    padding: 1rem var(--pad-pagina);
+    text-align: center;
+    overflow: hidden;
+    color: var(--color-fondo);
+}
+
+.banner-contacto img {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-contacto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.banner-contacto h1 {
+    display: block;
+    margin: 0;
+    font-size: clamp(1.25rem, 3.5vw, 3rem);
+    font-weight: var(--texto-bold);
+    color: var(--color-fondo);
+}
+
+.banner-contacto p {
+    margin: 0.25rem 0 0;
+    font-size: clamp(0.85rem, 2vw, 1.5rem);
+    font-weight: var(--texto-medium);
+}
