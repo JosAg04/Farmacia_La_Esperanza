@@ -55,3 +55,107 @@
     font-size: clamp(0.85rem, 2vw, 1.5rem);
     font-weight: var(--texto-medium);
 }
+
+.ubicacion, .formas-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    margin-top: clamp(0rem, 1vw, 1rem);
+}
+
+.ubicacion {
+    flex: 1 1 20rem;
+    max-width: 32rem;
+}
+
+.formas-contacto {
+    flex: 1 1 22rem;
+    max-width: 36rem;
+}
+
+.ubicacion h2, .formas-contacto h2 {
+    margin: 0;
+    color: var(--color-titulo);
+    font-size: clamp(1.15rem, 2.5vw, 1.9rem);
+    font-weight: var(--texto-bold);
+    text-align: left;
+}
+
+/* Ubiacacion estilo color */
+
+.ubicacion article {
+    padding: clamp(1rem, 2vw, 1.75rem);
+    background: var(--color-fondo-tarjeta);
+    border-radius: 0.9rem;
+}
+
+.ubicacion h3, .formas-contacto h3 {
+    margin: 0 0 0.5rem;
+    color: var(--color-titulo);
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-weight: var(--texto-bold);
+}
+
+.ubicacion address {
+    color: var(--color-texto);
+    font-style: normal;
+    font-size: clamp(0.85rem, 1.6vw, 1.2rem);
+    line-height: 1.5;
+}
+
+/* Formas de contacto estilo/color */
+
+.formas-contacto ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+}
+
+.formas-contacto li {
+    display: flex;
+}
+
+.formas-contacto article {
+    width: 100%;
+    padding: clamp(1rem, 2vw, 1.75rem);
+    background: var(--color-titulo-secundario);
+    border-radius: 0.9rem;
+    color: var(--color-fondo);
+}
+
+.formas-contacto article h3 {
+    margin-bottom: 0.35rem;
+}
+
+.formas-contacto p {
+    margin: 0;
+    font-size: clamp(0.85rem, 1.6vw, 1.2rem);
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.formas-contacto a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.formas-contacto article a:hover, .formas-contacto article a:focus-visible {
+    text-decoration: underline;
+}
+
+/*=============================
+        MEDIA QUERIES
+=============================== */
+ 
+@media (min-width: 992px) {
+    main {
+        gap: 2.5rem 3rem;
+        padding-bottom: 4rem;
+    }
+}
+ 
