@@ -1,0 +1,239 @@
+/* Hoja de estilo para sobre-nosotros.html */
+
+@import url("reset.css");
+@import url("components.css");
+@import url("variables.css");
+
+/*============================= 
+    HERO / TITULO
+===============================*/
+
+.titulo-sobre-nosotros {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    min-height: clamp(7rem, 17vw, 20rem);
+    padding: 1rem var(--pad-pagina);
+    text-align: center;
+    overflow: hidden;
+    color: var(--color-fondo);
+}
+
+.titulo-sobre-nosotros img {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo-sobre-nosotros::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.titulo-sobre-nosotros h1 {
+    display: block;
+    margin: 0;
+    font-size: clamp(1.25rem, 3.5vw, 3rem);
+    font-weight: var(--texto-bold);
+    color: var(--color-fondo);
+}
+
+.titulo-sobre-nosotros p {
+    margin: 0.25rem 0 0;
+    font-size: clamp(0.85rem, 2vw, 1.5rem);
+    font-weight: var(--texto-medium);
+}
+
+/* vision y mision */
+
+.vision, .mision {
+    display: flex;
+    align-items: stretch;
+    gap: 1rem;
+    width: 100%;
+    max-width: 72rem;
+    margin: 1.25rem auto 0;
+    margin-top: clamp(1.25rem, 2.5vw, 2rem);
+    padding-inline: var(--pad-pagina);
+}
+
+.vision figure, .mision figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: clamp(5rem, 22vw, 12rem);
+    margin: 0;
+    background: var(--color-titulo-secundario);
+    border-radius: 0.8rem;
+}
+
+.vision figure img, .mision figure img {
+    width: 60%;
+    height: auto;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+.vision div, .mision div {
+    flex: 1;
+    min-width: 0;
+    padding: clamp(1rem, 2vw, 2rem) clamp(1.25rem, 3vw, 2.5rem);
+    background: var(--color-fondo-tarjeta);
+    border-radius: 0.8rem;
+}
+
+.vision h2, .mision h2 {
+    margin: 0 0 0.4rem;
+    font-size: clamp(1.25rem, 3vw, 3rem);
+    font-weight: var(--texto-bold);
+    color: var(--color-titulo);
+}
+
+.vision p, .mision p {
+    margin: 0;
+    color: var(--color-texto);
+    font-size: clamp(0.85rem, 2vw, 1.4rem);
+    line-height: 1.4;
+}
+
+.mision div {
+    text-align: right; /* alinear el texto a la derecha como en figma */
+}
+
+/* valores */
+
+.valores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 72rem;
+    margin-inline: auto;
+    gap: 0.75rem;
+    padding: 2rem var(--pad-pagina) 2.5rem;
+    text-align: center;
+}
+
+.valores h2 {
+    margin: 0;
+    font-size: clamp(1.25rem, 3vw, 2.25rem);
+    font-weight: var(--texto-bold);
+    color: var(--color-titulo);
+}
+
+.valores > p {
+    margin: 0 0 1rem;
+    max-width: 30rem;
+    font-size: clamp(0.95rem, 2vw, 1.5rem);
+    color: var(--color-texto);
+}
+
+.valores ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.valores li {
+    display: flex;
+    flex: 0 0 calc((100% - 0.75rem) / 2);
+    min-width: 0;
+}
+
+.valores article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    width: 100%;
+    padding: clamp(1rem, 2vw, 2rem) 0.75rem;
+    border: 1px solid var(--color-placeholder);
+    border-radius: 0.9rem;
+    background: var(--color-fondo);
+}
+
+.valores article img {
+    width: clamp(3rem, 6vw, 5rem);
+    height: clamp(3rem, 6vw, 5rem);
+    height: 3rem;
+    object-fit: contain;
+}
+
+.valores article h3 {
+    margin: 0;
+    padding: clamp(0.9rem, 1.8vw, 1.4rem);
+    color: var(--color-texto);
+    font-size: 0.9rem;
+    font-weight: var(--texto-bold);
+}
+
+.valores article p {
+    margin: 0;
+    padding: clamp(0.75rem, 1.4vw, 1.1rem);
+    color: var(--color-texto-suave);
+    font-size: 0.8rem;
+    line-height: 1.3;
+}
+
+/*=============================
+        MEDIA QUERIES
+=============================== */
+ 
+/* Las 4 tarjetas de valores en una sola fila */
+
+@media (min-width: 560px) {
+    .valores li {
+        flex: 1 1 0;
+    }
+}
+ 
+@media (min-width: 992px) {
+    .vision,
+    .mision {
+        margin-top: 1.75rem;
+    }
+ 
+    .vision div,
+    .mision div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1.5rem 2rem;
+    }
+ 
+    .valores article {
+        padding: 1.5rem 1rem;
+    }
+ 
+    .valores article img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+ 
+    .valores article h3 {
+        font-size: 1rem;
+    }
+ 
+    .valores article p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Nota del diseñador: Tengo sueño, no he comido y la verdad ya 
+no se que escribo, pero hey! esta quedando bien, asi que ni tan mal.*/

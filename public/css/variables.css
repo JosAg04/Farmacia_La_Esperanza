@@ -1,5 +1,5 @@
 /*=============================
-     Hoja de estilo global 
+     Hoja de estilo variables 
 ===============================*/
 
 /*=======================
@@ -19,7 +19,7 @@
     --color-titulo-secundario: #5297e5; /* Titulos h3 secundario */
     --color-texto: black; /* texto general en la pagina */
     --color-resaltado: #2c694e; /* precios y textos resaltados */
-    --color-placeholder: #56615A; /* color barras de busquedas/inputs */
+    --color-placeholder: #88938C; /* color barras de busquedas/inputs */
     --color-bordes: #88938C; /* color para bordes */
     --color-texto-suave: #56615A; /* color para subtextos */
     --color-iconos: #85b4f2; /* color para iconos principales */
@@ -42,79 +42,6 @@
     --radio-comun: 20px; /* tarjetas, botones, inputs */
     --radio-2: 30px; /* barras de busquedas, formularios */
     --radio-pildora: 999px; /* badge de ofertas o botones tipo pildora */
-    --borde-base: 1px solid var(var(--color-placeholder));
+    --borde-base: 1px solid var(--color-placeholder);
+    --pad-pagina: clamp(1rem, 5vw, 3rem);
  }
-
- /*==============================================================
-        RESET QUITAR MARGENES Y RELLENOS POR DEFECTO 
- ===============================================================*/
-
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-
-
-ul, ol, a {
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
-
- /*============================= 
-        ESTILO GLOBAL BODY
- =============================== */
-
- body {
-    font-family: var(--fuente-texto);
-    font-size: 1.5rem;
-    font-weight: var(--texto-regular);
-    line-height: 1.5;
-    color: var(--color-texto);
-    background-color: var(--color-fondo);
- }
-
- /*============================= 
-            HEADINGS
- =============================== */
-
- h1, h2, h3, h4 {
-    font-family: var(--fuente-texto);
-    font-weight: var(--texto-bold);
-    line-height: 1.2;
-    color: var(--color-titulo);
- }
-
-  /*============================= 
-            LINKS
- =============================== */
-
- a {
-    color: var(--color-primario);
-    text-decoration: none;
- }
-
- a:hover {
-    text-decoration: underline;
- }
-
- a:focus-visible {
-    outline: 3px solid var(--color-iconos);
-    outline-offset: 2px;
- }
-
-a[aria-current="page"] {
-    color: var(--color-iconos);
-}
-
-/*============================= 
-            IMAGENES
- =============================== */
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
