@@ -34,7 +34,7 @@
  .card {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 2rem;
     margin: 20px;
     padding: 30px;
     background-color: var(--color-fondo);
@@ -98,7 +98,7 @@
 
 .badge-oferta {
     color: white;
-    background-color: var(--color-fondo-positivo);
+    background-color: var(--color-primario);
 }
 
 /*============================= 
@@ -127,9 +127,7 @@
     outline-offset: 1px;
     border-color: var(--color-secundario);
 }
-main h1 {
-    display: none;
-}
+
 /*============================= 
             HEADER
 =============================== */
