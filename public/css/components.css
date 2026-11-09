@@ -2,6 +2,9 @@
     Hoja de estilo containers
 ===============================*/
 
+@import url("variables.css");
+@import url("reset.css");
+
 /*============================= 
             CONTAINERS
  =============================== */
@@ -124,6 +127,414 @@
     outline-offset: 1px;
     border-color: var(--color-secundario);
 }
+main h1 {
+    display: none;
+}
+/*============================= 
+            HEADER
+=============================== */
+
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1rem;
+    padding: 0.75rem var(--pad-pagina) 0;
+    background: var(--color-fondo);
+    
+}
+
+/* Logo */
+
+header > a {
+    order: 1;
+    display: inline-flex;
+    flex: 0 0 auto;
+}
+
+header > a img {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* Accesos del usuario */
+
+.accesos-header {
+    order: 2;
+    margin-left: auto;
+}
+
+.accesos-header ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.accesos-header a {
+    display: inline-flex;
+    padding: 0.25rem;
+    color: var(--color-titulo-secundario);
+}
+
+.accesos-header img {
+    width: 1.6rem;
+    height: 1.6rem;
+    object-fit: contain;
+}
+
+/* etiqeta invisble */
+
+.barra-busqueda label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+/* etiqeta invisble */
+
+/* buscador */
+
+.barra-busqueda {
+    order: 3;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    border: var(--borde-base);
+    border-radius: var(--radio-pildora);
+    padding: 0.25rem 0.5rem 0.25rem 1rem;
+    background: var(--color-fondo);
+}
+
+.barra-busqueda input[type="search"] {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font: inherit;
+    font-size: 1rem;
+    padding: 0.4rem 0;
+}
+
+.barra-busqueda:focus-within {
+    outline: 2px solid var(--color-tiulo-secundario);
+    outline-offset: 2px;
+}
+
+.barra-busqueda .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background: transparent;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+.barra-busqueda .icn-lupa {
+    width: 1.4rem;
+    height: 1.4rem;
+    
+}
+
+/* navegacion principal */
+
+.navegacion-header {
+    order: 4;
+    flex: 1 1 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border-bottom: var(--borde-base);
+}
+
+.navegacion-header::-webkit-scrollbar {
+    display: none;
+}
+
+.navegacion-header ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 0 0.5rem;
+    width: max-content;
+    min-width: 100%;
+}
+
+.navegacion-header a {
+    display: inline-block;
+    padding: 0.25rem 0.25rem 0.5rem;
+    color: var(--color-primario);
+    font-size: 0.85rem;
+    font-weight: var(--texto-bold);
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+}
+
+.navegacion-header a:hover, .navegacion-header a:focus-visible {
+    border-bottom-color: var(--color-titulo-secundario);
+}
+
+.navegacion-header a[aria-current="page"] {
+    color: var(--color-titulo-secundario);
+}
+
+/*==================================================== 
+            MEDIA QUERIES (tablet / escritorio)
+====================================================== */
+
+@media (min-width: 768px) {
+    header {
+        gap: 0.75rem 2rem;
+        padding: 0.75rem var(--pad-pagina) 0;
+        padding-top: 1rem;
+    }
+ 
+    header > a img {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+ 
+    .barra-busqueda {
+        order: 2;
+        flex: 1 1 0;
+    }
+ 
+    .accesos-header {
+        order: 3;
+        margin-left: 0;
+    }
+ 
+    .accesos-header ul {
+        gap: 1.5rem;
+    }
+ 
+    .accesos-header img {
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+ 
+    .navegacion-header ul {
+        gap: clamp(1.5rem, 4vw, 3.5rem);
+    }
+ 
+    .navegacion-header a {
+        font-size: 0.95rem;
+    }
+}
+
+/*============================= 
+            FOOTER
+=============================== */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem clamp(1rem, 5vw, 3rem);
+    background: var(--color-header-footer);
+    color: var(--color-fondo);
+    text-align: center;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer a:hover, footer a:focus-visible {
+    text-decoration: underline;
+}
+
+footer h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.4rem;
+    font-weight: var(--texto-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+    color: var(--color-fondo);
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* logo */
+
+.logo-pie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo-pie img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.titulo-marca {
+    max-width: 10ch;
+    color: var(--color-resaltado);
+    font-size: 1.15rem;
+    font-weight: var(--texto-bold);
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+/* navagcion pie */
+
+.pie-navegacion ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.pie-navegacion a {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+/* contacto */
+
+.pie-contacto address {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    font-style: normal;
+    font-size: 0.8rem;
+}
+
+.pie-contacto p {
+    margin: 0;
+}
+
+.pie-contacto strong {
+    text-transform: uppercase;
+}
+
+/* redes */
+
+.pie-redes ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.pie-redes a {
+    display: inline-flex;
+}
+
+.pie-redes img {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+}
+
+/* copyright */
+
+footer > small {
+    align-self: stretch;
+    margin-inline: calc(var(--pad-pagina) * -1);
+    padding: 1.25rem clamp(1rem, 5vw, 3rem);
+    background: var(--color-header-footer);
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+/*==================================================== 
+            MEDIA QUERIES (tablet / escritorio)
+====================================================== */
+
+/* ---------- Footer en tablet: 2 columnas ---------- */
+@media (min-width: 600px) {
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 2rem 1.5rem;
+        text-align: left;
+    }
+ 
+    footer > :not(small) {
+        flex: 1 1 calc(50% - 0.75rem);
+        min-width: 0;
+    }
+ 
+    footer > small {
+        flex: 0 0 calc(100% + clamp(1rem, 5vw, 3rem) * 2);
+        text-align: center;
+    }
+ 
+    .logo-pie {
+        align-items: flex-start;
+    }
+ 
+    .pie-redes ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+ 
+/* ---------- Footer en escritorio: 4 columnas ---------- */
+@media (min-width: 992px) {
+    footer {
+        padding-top: 2.5rem;
+        gap: 2.5rem 2rem;
+    }
+ 
+    footer > :not(small) {
+        flex: 1 1 0;
+    }
+ 
+    .logo-pie {
+        align-items: center;
+    }
+ 
+    .pie-navegacion {
+        flex-grow: 1.3;
+    }
+ 
+    .pie-contacto {
+        flex-grow: 1.6;
+    }
+ 
+    .pie-redes {
+        flex-grow: 0.8;
+    }
+ 
+    .pie-redes h2 {
+        text-align: right;
+    }
+ 
+    .pie-redes ul {
+        align-items: flex-end;
+        gap: 1.5rem;
+    }
+ 
+    footer > small {
+        font-size: 0.9rem;
+    }
+}
+
 
 /*============================= 
             MEDIA QUERIES

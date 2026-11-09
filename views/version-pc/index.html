@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | Farmacia La Esperanza</title>
+    <link rel="stylesheet" href="../../public/css/index.css">
     <link rel="stylesheet" href="../../public/css/globall.css">
+    <link rel="stylesheet" href="../../public/css/components.css">
+    
+
 </head>
 <body>
 
@@ -13,14 +17,14 @@
     <header>
 
         <a href="index.html" aria-label="Farmacia La Esperanza, inicio">
-            <img src="" alt="Logo de Farmacia La Esperanza">
+            <img src="../../public/img/img-farmacia/logo/a9ea70fa6001f6dc56f08661bb241fefff20e8cb.png" alt="Logo de Farmacia La Esperanza">
         </a> 
 
         <form action="/buscar" method="get" role="search" class="barra-busqueda form">
             <label for="buscar-producto">Buscar producto</label>
             <input type="search" id="buscar-producto" name="q" placeholder="Buscar un producto">
             <button type="submit" class="btn">
-                <img src="" alt="Buscar" class="icn-lupa">
+                <img src="../../public/img/img-farmacia/Iconos/search4-outline-128x128.png" alt="Buscar" class="icn-lupa">
             </button>
         </form>
 
@@ -31,25 +35,25 @@
             <ul>
                 <li>
                     <a href="carrito.html">
-                        <img src="" alt="Carrito de compras">
+                        <img src="../../public/img/img-farmacia/Iconos/cart-large2-outline-128x128.png" alt="Carrito de compras">
                     </a>
                 </li>
 
                 <li>
                     <a href="pedidos.html">
-                        <img src="" alt="Mis pedidos">
+                        <img src="../../public/img/img-farmacia/Iconos/bill-list-outline-128x128.png" alt="Mis pedidos">
                     </a>
                 </li>
 
                 <li>
                     <a href="recetas.html">
-                        <img src="" alt="Mis recetas y medicinas">
+                        <img src="../../public/img/img-farmacia/Iconos/pill-jar2-outline-128x128.png" alt="Mis recetas y medicinas">
                     </a>
                 </li>
 
                 <li>
                     <a href="perfil.html">
-                        <img src="" alt="Mi perfil">
+                        <img src="../../public/img/img-farmacia/Iconos/user-outline-128x128.png" alt="Mi perfil">
                     </a>
                 </li>
             </ul>
@@ -87,7 +91,7 @@
         <section class="titulo-hero container">
 
             <h1 id="titulo-hero">Farmacia La Esperanza</h1>
-            <img src="" alt="Informacion de contacto, Farmacia La Esperanza">
+            <img src="../../public/img/img-farmacia/Iconos/Gemini_Generated_Image_hlzuxzhlzuxzhlzu.jpg" alt="Informacion de contacto, Farmacia La Esperanza">
 
         </section>
 
@@ -100,64 +104,151 @@
             <ul>
                 <li>
                     <article class="producto-popular card">
-                        <a href="#">
-                            <img src="" alt="Nombre producto 1">
-                            <h3>Producto 1</h3>
-                        </a>
+                        
+                        <img src="../../public/img/img-farmacia/Medicamentos/Aciclovir 100tab.png" alt="ACICLOVIR-ALFA 100 TABLETAS">
+                        <h2><strong>ACICLOVIR-ALFA</strong> 100 TABLETAS</h2>
+
+                        <span class="precio">RD$260.00</span>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="aciclovir-alfa-100-tabletas">
+                            <button type="submit" class="btn">Agregar al carrito</button>
+                        </form>
                     </article>
                 </li>
 
                 <li>
                     <article class="producto-popular card">
-                        <a href="#">
-                            <img src="" alt="Nombre producto 2">
-                            <h3>Producto 1</h3>
-                        </a>
+                        
+                        <img src="../../public/img/img-farmacia/Medicamentos/630e063b0c22d9b04e448e87_100103---ACETAMINOFEN-ALFA-300mg-x-100-SUPC-p-500.png" alt="ACETAMINOFEN-ALFA 300mg 100 SUPOSITORIOS">
+                        <h2><strong>ACETAMINOFEN-ALFA</strong> 300mg 100 SUPOSITORIOS</h2>
+
+                        <span class="precio">RD$300.00</span>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="acetaminofen-alfa-300mg-100-supositorios">
+                            <button type="submit" class="btn">Agregar al carrito</button>
+                        </form>
                     </article>
                 </li>
 
                 <li>
                     <article class="producto-popular card">
-                        <a href="#">
-                            <img src="" alt="Nombre producto 3">
-                            <h3>Producto 2</h3>
-                        </a>
+                        
+                        <img src="../../public/img/img-farmacia/Medicamentos/Amlocardi 30mg 10tab.png" alt="AMLOCARDI-AT 10mg 30 CAPSULAS">
+                        <h2><strong>AMLOCARDI-AT</strong> 10mg 30 CAPSULAS</h2>
+
+                        <span class="precio">RD$450.00</span>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="amlocardi-at-10mg-30-capsulas">
+                            <button type="submit" class="btn">Agregar al carrito</button>
+                        </form>
                     </article>
                 </li>
 
                 <li>
                     <article class="producto-popular card">
-                        <a href="#">
-                            <img src="" alt="Nombre producto 4">
-                            <h3>Producto 3</h3>
-                        </a>
+                        
+                        <img src="../../public/img/img-farmacia/Medicamentos/Aspiren 81mg 100 tab.png" alt="ASPIREN 81mg 100 CAPSULAS">
+                        <h2><strong>ASPIREN</strong> 81mg 100 CAPSULAS</h2>
+
+                        <span class="precio">RD$150.00</span>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="aspiren-81mg-100-capsulas">
+                            <button type="submit" class="btn">Agregar al carrito</button>
+                        </form>
                     </article>
                 </li>
 
                 <li>
                     <article class="producto-popular card">
-                        <a href="#">
-                            <img src="" alt="Nombre producto 5">
-                            <h3>Producto 4</h3>
-                        </a>
+                        
+                        <img src="../../public/img/img-farmacia/Medicamentos/Aspiren 81mg 30tab.png" alt="ASPIREN 81mg 30 CAPSULAS">
+                        <h2><strong>ASPIREN</strong> 81mg 30 CAPSULAS</h2>
+
+                        <span class="precio">RD$75.00</span>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="aspiren-81mg-30-capsulas">
+                            <button type="submit" class="btn">Agregar al carrito</button>
+                        </form>
                     </article>
                 </li>
 
                 <li>
                     <article class="producto-popular card">
-                        <a href="#">
-                            <img src="" alt="Nombre producto 6">
-                            <h3>Producto 6</h3>
-                        </a>
+                        
+                        <img src="../../public/img/img-farmacia/Cuidado Personal/dove clin tono uniform 58g.webp" alt="DOVE CLIN TONO UNIFORME 58g">
+                        <h2><strong>DOVE CLIN</strong> TONO UNIFORME 58g</h2>
+
+                        <span class="precio">RD$90.00</span>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="dove-clin-tono-uniforme-58g">
+                            <button type="submit" class="btn">Agregar al carrito</button>
+                        </form>
                     </article>
                 </li>
 
                 <li>
                     <article class="producto-popular card">
-                        <a href="#">
-                            <img src="" alt="Nombre producto 7">
-                            <h3>Producto 6</h3>
-                        </a>
+                        
+                        <img src="../../public/img/img-farmacia/Cuidado Personal/dove jab white 90g.webp" alt="DOVE JABON WHITE 90g">
+                        <h2><strong>DOVE</strong> JABON WHITE 90g</h2>
+
+                        <span class="precio">RD$180.00</span>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="dove-jabon-white-90g">
+                            <button type="submit" class="btn">Agregar al carrito</button>
+                        </form>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="producto-popular card">
+                        
+                        <img src="../../public/img/img-farmacia/Cuidado Personal/Dove masc  bond intense 250g.webp" alt="DOVE MASC BOND INTENSE 250g">
+                        <h2><strong>DOVE MASC</strong> BOND INTENSE 250g</h2>
+
+                        <span class="precio">RD$65.00</span>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="dove-masc-bond-intense-250g">
+                            <button type="submit" class="btn">Agregar al carrito</button>
+                        </form>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="producto-popular card">
+                        
+                        <img src="../../public/img/img-farmacia/Cuidado Personal/kotex toallas nocturna 16-8.png" alt="KOTEX TOALLAS NOCTURNAS 16/8">
+                        <h2><strong>KOTEX</strong> TOALLAS NOCTURNAS 16/8</h2>
+
+                        <span class="precio">RD$65.00</span>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="kotex-toallas-nocturnas-16-8">
+                            <button type="submit" class="btn">Agregar al carrito</button>
+                        </form>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="producto-popular card">
+                        
+                        <img src="../../public/img/img-farmacia/Cuidado Personal/ola m gotero crecimiento anti-caida 40z.png" alt="OLA GOTERO CRECIMIENTO ANTI-CAIDA 40 Onz">
+                        <h2><strong>OLA GOTERO</strong> CRECIMIENTO ANTI-CAIDA 40 Onz</h2>
+
+                        <span class="precio">RD$95.00</span>
+
+                        <form action="carrito.html" method="post">
+                            <input type="hidden" name="producto" value="ola-gotero-crecimiento-anti-caida-40-onz">
+                            <button type="submit" class="btn">Agregar al carrito</button>
+                        </form>
                     </article>
                 </li>
 
@@ -175,56 +266,56 @@
             <ul>
                 <li>
                     <a href="#">
-                        <img src="" alt="icono medicamentos">
+                        <img src="../../public/img/img-farmacia/Iconos/medical-kit-outline-128x128.png" alt="icono medicamentos">
                         <span>Medicamentos</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="" alt="icono cuidado personal">
+                        <img src="../../public/img/img-farmacia/Iconos/personal-hygiene.png" alt="icono cuidado personal">
                         <span>Cuidado personal</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="" alt="icono bebes&ninos">
+                        <img src="../../public/img/img-farmacia/Iconos/baby.png" alt="icono bebes&ninos">
                         <span>Bebes & ninos</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="" alt="icono cosmeticos">
+                        <img src="../../public/img/img-farmacia/Iconos/cosmetics.png" alt="icono cosmeticos">
                         <span>Cosmetica y belleza</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="" alt="icono bienestar">
+                        <img src="../../public/img/img-farmacia/Iconos/humanity.png" alt="icono bienestar">
                         <span>Bienestar</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="" alt="icono comestibles">
+                        <img src="../../public/img/img-farmacia/Iconos/cookie-outline-128x128.png" alt="icono comestibles">
                         <span>Comestibles</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="" alt="icono salud natural">
+                        <img src="../../public/img/img-farmacia/Iconos/natural.png" alt="icono salud natural">
                         <span>Salud natural</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="" alt="icono vitaminas">
+                        <img src="../../public/img/img-farmacia/Iconos/vitamin.png" alt="icono vitaminas">
                         <span>Vitaminas</span>
                     </a>
                 </li>
@@ -238,11 +329,11 @@
         <section class="promocion">
 
             <figure class="banner">
-                <img src="" alt="spam Farmacia La Esperanza">
+                <img src="../../public/img/img-farmacia/img/publicidad.jpg" alt="spam Farmacia La Esperanza">
             </figure>
 
             <figure class="app">
-                <img src="" alt="promocion aplicacion FarmaciaYa">
+                <img src="../../public/img/img-farmacia/img/descargar-app.jpg" alt="promocion aplicacion FarmaciaYa">
             </figure>
 
         </section>
@@ -261,7 +352,7 @@
         <section aria-label="Farmacia La Esperanza" class="logo-pie">
 
             <a href="index.html">
-                <img src="" alt="Logo de Farmacia La Esperanza">
+                <img src="../../public/img/img-farmacia/logo/a9ea70fa6001f6dc56f08661bb241fefff20e8cb.png" alt="Logo de Farmacia La Esperanza">
             </a>
             <strong class="titulo-marca">Farmacia La Esperanza</strong>
 
@@ -301,19 +392,19 @@
             <ul>
                 <li>
                     <a href="https://www.facebook.com/">
-                        <img src="" alt="facebook">
+                        <img src="../../public/img/img-farmacia/Iconos/social-media (1).png" alt="facebook">
                     </a>
                 </li>
 
                 <li>
                     <a href="https://www.instagram.com/">
-                        <img src="" alt="instagram">
+                        <img src="../../public/img/img-farmacia/Iconos/instagram (1).png" alt="instagram">
                     </a>
                 </li>
 
                 <li>
                     <a href="https://twitter.com/">
-                        <img src="" alt="twitter">
+                        <img src="../../public/img/img-farmacia/Iconos/social-media.png" alt="twitter">
                     </a>
                 </li>
             </ul>
