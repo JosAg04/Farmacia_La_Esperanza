@@ -1,1 +1,288 @@
 /* HOJA DE ESTILO PARA OFERTAS.HTML */
+
+@import url("reset.css");
+@import url("components.css");
+@import url("variables.css");
+
+/*============================= 
+    HERO / OFERTAS
+===============================*/
+
+.hero-ofertas {
+    margin: 0;
+}
+
+.hero-ofertas img {
+    display: block;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center 55%;
+}
+/*============================= 
+    PRODUCTOS OFERTA
+===============================*/
+
+
+.productos-ofertas {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 1.5rem var(--pad-pagina) 3rem;
+}
+
+.filtrar-categoria {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--color-placeholder);
+}
+
+.filtrar-categoria h1 {
+    margin: 0;
+    color: var(--color-titulo);
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+    font-weight: var(--texto-bold);
+}
+
+.filtrar-categoria form {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.filtrar-categoria label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.filtrar-categoria select {
+    min-width: 12rem;
+    padding: 0.4rem 0.75rem;
+    border: var(--borde-base);
+    border-radius: 0.9rem;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.filtrar-categoria select:focus-visible {
+    outline: 2px solid var(--color-titulo);
+    outline-offset: 2px;
+}
+
+.filtrar-categoria button {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.filtrar-categoria button:focus-visible {
+    position: static;
+    width: auto;
+    height: auto;
+    clip-path: none;
+    padding: 0.4rem 0.9rem;
+    border: 0;
+    border-radius: var(--radio-pildora);
+    background-color: var(--color-secundario);
+    color: var(--color-fondo);
+    font: inherit;
+    font-size: 0.9rem;
+}
+
+.productos-ofertas > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.productos-ofertas > ul > li {
+    display: flex;
+    flex: 0 0 calc((100% - 1rem) / 2);
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+}
+
+.oferta-producto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 2rem 0.75rem 1rem;
+    background-color: var(--color-fondo);
+    border-radius: 0.9rem;
+    box-shadow:  0 2px 10px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.badge-oferta {
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--radio-pildora);
+    background-color: var(--color-primario);
+    color: var(--color-fondo);
+    font-size: 0.65rem;
+    font-weight: var(--texto-semibold);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.oferta-producto img {
+    width: 100%;
+    height: 9.5rem;
+    object-fit: contain;
+}
+
+.oferta-producto h2 {
+    margin: 0;
+    color: var(--color-texto);
+    font-size: 0.65rem;
+    font-weight: var(--texto-regular);
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.oferta-producto h2 strong {
+    font-weight: var(--texto-semibold);
+}
+
+.oferta-producto p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.precio-anterior {
+    color: var(--color-texto-alerta);
+    font-size: 0.65rem;
+    font-weight: var(--texto-bold);
+}
+
+.precio-actual {
+    color: var(--color-primario);
+    font-size: 1rem;
+    font-weight: var(--texto-bold);
+}
+
+.oferta-producto form {
+    width: 100%;
+    margin-top: auto;
+}
+
+.oferta-producto .btn {
+    width: 100%;
+    min-height: 0;
+    line-height: 1.2;
+    padding: 0.35rem 0.5rem;
+    border: 0;
+    border-radius: var(--radio-pildora);
+    background: var(--color-secundario);
+    color: var(--color-fondo);
+    font: inherit;
+    font-size: 0.65rem;
+    font-weight: var(--texto-bold);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+}
+
+.oferta-producto .btn:hover, .oferta-producto .btn:focus-visible {
+    filter: brightness(1.25);
+}
+
+/*=============================
+        MEDIA QUERIES
+=============================== */
+ 
+/* 3 por fila */
+
+@media (min-width: 600px) {
+    .productos-ofertas > ul > li {
+        flex-basis: calc((100% - 2rem) / 3);
+    }
+}
+ 
+/* 4 por fila, como en el diseño */
+
+@media (min-width: 768px) {
+    .productos-ofertas > ul {
+        gap: 1.25rem;
+    }
+ 
+    .productos-ofertas > ul > li {
+        flex-basis: calc((100% - 3.75rem) / 4);
+    }
+ 
+    .oferta-producto img {
+        height: 8rem;
+    }
+ 
+    .oferta-producto h2,
+    .precio-anterior,
+    .oferta-producto .btn {
+        font-size: 0.75rem;
+    }
+ 
+    .badge-oferta {
+        font-size: 0.7rem;
+    }
+ 
+    .precio-actual {
+        font-size: 1.15rem;
+    }
+}
+ 
+@media (min-width: 992px) {
+    .oferta-producto img {
+        height: 9rem;
+    }
+}
+ 
+
+
+main > .productos-ofertas > .filtrar-categoria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main > .productos-ofertas .filtrar-categoria button:not(:focus-visible) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+}
